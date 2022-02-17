@@ -55,7 +55,7 @@ public class PaisMain {
         //Removemos el pais buscado
         Iterator<String> iterator = paisesSet.iterator();
         while (iterator.hasNext()){
-            if(iterator.next().equals(paisEliminar)) //Consultar porque si no pongo next() se crea un bucle infinito
+            if(iterator.equals(paisEliminar)) //Consultar porque si no pongo next() se crea un bucle infinito
                 iterator.remove();
         }
         
